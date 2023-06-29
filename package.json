@@ -1,0 +1,55 @@
+{
+  "name": "my-packages",
+  "private": true,
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "zilong",
+      "email": "wangzilong@manjuu.com"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": ">=16.12.0",
+    "react-dom": ">=16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.38.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "less": "^4.1.3",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=12.8.0"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "types/*"
+  ],
+  "types": "dist/my-packages.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/my-packages.mjs",
+      "require": "./dist/my-packages.umd.js"
+    }
+  }
+}
